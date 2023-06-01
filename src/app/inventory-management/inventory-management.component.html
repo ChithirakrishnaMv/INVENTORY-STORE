@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center p-4">INVENTORY MANAGEMENT SYSTEM</h1>
+            <a routerLink="/inventory/add" class="btn btn-outline-dark shadow p-2" style=" float: right;"><i class="fa-solid fa-user-plus"></i> ADD NEW</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6" style=" display: flex; align-items: center;">
+        <input type="text" (keyup)="Search($event)" class=" mt-4 mb-4 p-2 me-2" placeholder="Search Inventory">
+        <i class="fa-solid fa-magnifying-glass" style="color: #006fff;"></i>
+    </div>
+</div>
+<!-- card -->
+<!-- {{allInventory|json}} -->
+<div class="row">
+    <div class="card m-5" *ngFor="let Inventory of allInventory | filter:searchKey:'brand'">
+        <div class="box">
+            <div class="img">
+                <img [src]=Inventory.photoUrl>
+            </div>
+            <h2>{{Inventory.name}} <br>
+            <span class="mt-2">{{Inventory.brand}}</span></h2>
+            <p> Price : {{Inventory.price}} <br> 
+                supplier : {{Inventory.supplier}} <br>
+                Item No : {{Inventory.itemNo}}</p>
+
+            <span>
+                <ul>
+                    <li><a routerLink="/inventory/view/{{Inventory.id}}"><i class="fa-solid fa-eye" style="float: right; color: #213659"></i></a> </li>
+                    <li><a routerLink="/inventory/update/{{Inventory.id}}"><i class="fa-solid fa-pen" style="float: right; color:#213659"></i></a></li>
+                    <li><a (click)="deteteInventory(Inventory.id)"><i class="fa-solid fa-trash" style="float: right; color:  #213659;"></i></a></li>
+                </ul>
+            </span>
+        </div>
+    </div>
+</div>

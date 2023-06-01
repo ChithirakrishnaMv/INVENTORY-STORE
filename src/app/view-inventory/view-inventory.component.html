@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center p-4">VIEW INVENTORY</h1>
+            <a routerLink="/inventory/add" class="btn btn-outline-dark shadow" style=" float: right;"><i class="fa-solid fa-user-plus"></i> Add New</a>
+        </div>
+    </div>
+</div>
+<!-- {{inventory|json}} -->
+<div class="row m-5">
+    <div class="col-1"></div>
+    <div class="col-5 ms-3">
+        <!-- LIST INVENTORY -->
+        <ul class="list-group shadow border border-secondary">
+            <li class="list-group-item active">ITEM DETAILS </li>
+            <li class="list-group-item">Id : {{inventory.id}}</li>
+            <li class="list-group-item">Item Name : {{inventory.name}}</li>
+            <li class="list-group-item">Brand : {{inventory.brand}}</li>
+            <li class="list-group-item">Price : {{inventory.price}}</li>
+            <li class="list-group-item">Supplier : {{inventory.supplier}}</li>
+            <li class="list-group-item">No of Item : {{inventory.itemNo}}</li>
+            <li class="list-group-item">Type of Item : {{typeName}}</li>
+          </ul>
+          <div>
+            <button class="btn btn-outline-dark mt-5 shadow" style="margin-left: 30%;" routerLink="">GO BACK</button>
+        </div>
+    </div>
+    <div class="col-5 ms-3 ps-5 ">
+        <!-- <img src="https://www.bing.com/th/id/OGC.0ca2a5738a404e7800ee1f93dab9676a?pid=1.7&rurl=https%3a%2f%2fcdn.dribbble.com%2fusers%2f129972%2fscreenshots%2f3964116%2f75_smile.gif&ehk=ttYLBLn6tXiQlucWzM6HXO9oxAqbOv%2fOpT6CKygPAgg%3d" width="100%" alt="img"> -->
+        <!-- <img src="https://i.pinimg.com/originals/5d/2d/95/5d2d955df2895ca18dec554b0e716042.jpg" width="100%" alt=""> -->
+        <img [src]=inventory.photoUrl width="82%" height="78%" alt="" class="shadow border border-light rounded">
+    </div>
+</div>

@@ -1,0 +1,84 @@
+{
+  "inventory": [
+    {
+      "id": "001",
+      "name": "hp intel i7",
+      "brand": "hp",
+      "price": "55000",
+      "supplier": "Alex enterprise",
+      "photoUrl": "https://th.bing.com/th/id/R.a9c34fb8f2688cb6e2d73085f9310aeb?rik=nboa4bDgfjsVgA&riu=http%3a%2f%2fvaluenomad.com%2fwp-content%2fuploads%2f2018%2f01%2fhp-pavilion-15-cc110na.jpg&ehk=bVzaOB7yQdbw4OZ%2f%2fTtnIgWtp3anoY1SdbNpxNXa2XY%3d&risl=&pid=ImgRaw&r=0",
+      "itemNo": "5",
+      "groupId": "1"
+    },
+    {
+      "id": "002",
+      "name": "iPhone 14 max pro",
+      "brand": "Apple",
+      "price": "150000",
+      "supplier": "joeJohn enterprise",
+      "photoUrl": "https://th.bing.com/th/id/OIP.YfnLRVia6vNIMmvyjKcnCAHaHa?w=182&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "itemNo": "10",
+      "groupId": "2"
+    },
+    {
+      "id": "003",
+      "name": "huawei watch fit",
+      "brand": "huawei",
+      "price": "5000",
+      "supplier": "Annie enterprise",
+      "photoUrl": "https://th.bing.com/th/id/OIP.umTGTxijZaEW4jLpz8rFWwHaJA?pid=ImgDet&rs=1",
+      "itemNo": "2",
+      "groupId": "3"
+    },
+    {
+      "id": "004",
+      "name": "suncream",
+      "brand": "Nivea",
+      "price": "450",
+      "supplier": "nivea enterprise",
+      "photoUrl": "https://th.bing.com/th/id/OIP.ItvW3BeTz6gJOtLA4JUSTAHaHa?w=188&h=188&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "itemNo": "5",
+      "groupId": "6"
+    },
+    {
+      "typeId": "4",
+      "photoUrl": "https://m.media-amazon.com/images/I/51YAZhd080L._AC_UY327_FMwebp_QL65_.jpg",
+      "id": "005",
+      "name": "Noise Buds VS104 Pro",
+      "brand": "Noise",
+      "supplier": "Amazon",
+      "itemNo": "5",
+      "price": "4999"
+    }
+  ],
+  "type": [
+    {
+      "id": "1",
+      "name": "Laptop"
+    },
+    {
+      "id": "2",
+      "name": "mobile"
+    },
+    {
+      "id": "3",
+      "name": "watch"
+    },
+    {
+      "id": "4",
+      "name": "headset"
+    },
+    {
+      "id": "5",
+      "name": "cloths"
+    },
+    {
+      "id": "6",
+      "name": "cosmetics"
+    },
+    {
+      "id": "7",
+      "name": "others"
+    }
+  ]
+}

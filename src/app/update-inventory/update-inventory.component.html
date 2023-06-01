@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center p-4">EDIT CONTACT</h1>
+            <a routerLink="/contact/add" class="btn btn-outline-dark shadow" style=" float: right;"><i class="fa-solid fa-user-plus"></i> Add New</a>
+        </div>
+    </div>
+</div>
+<pre>{{inventory|json}}</pre>
+<div class="row m-5">
+    <div class="col-5 ms-5">
+        <!-- add contact -->
+        <form class="hadow-lg shadow p-3 mb-5 bg-white rounded">
+            <b>Edit Inventory</b>
+             <div class="form-group m-2">
+                 <input [(ngModel)]="inventory.id" name="contactId" type="text" class="app-form-control" placeholder="Inventory Id" >
+             </div>
+             <div class="form-group m-2">
+                 <input [(ngModel)]="inventory.name"  name="inventName" type="text"  class="app-form-control"placeholder="Inventory Name">
+             </div>
+             <div class="form-group m-2">
+                 <input [(ngModel)]="inventory.brand"  name="inventBrand" type="text" class="app-form-control"placeholder="Inventory brand">
+             </div>
+             <div class="form-group m-2">
+                 <input [(ngModel)]="inventory.supplier"  name="supplier" type="text" class="app-form-control"placeholder="supplier">
+             </div>
+             <div class="form-group m-2">
+                 <input [(ngModel)]="inventory.photoUrl"   name="Url" type="text" class="app-form-control"placeholder="Photo Url">
+             </div>
+             <div class="form-group m-2">
+                 <input [(ngModel)]="inventory.itemNo"   name="itemNo" type="text" class="app-form-control"placeholder="item no">
+             </div>
+             <div class="form-group m-2">
+                <input [(ngModel)]="inventory.price"   name="price" type="text" class="app-form-control"placeholder="Price">
+            </div>
+             <!-- select a group -->
+             <div class=" m-2 mb-4">
+                <select [(ngModel)]="inventory.groupId"  name="itemId" class="app-form-control text-secondary">
+                     <option  selected hidden disabled>type of item</option>
+                     <option [value]="typ.id"  *ngFor="let typ of types">{{typ.name}}</option>
+                </select>
+             </div>
+             <button (click)="updateInventory()" class="btn btn-outline-success shadow mt-3 mb-3" style="margin-left: 35%;">Save</button>
+             <button routerLink="" class="btn btn-outline-danger shadow mt-3 mb-3" style=" margin-left: 5%;">Close</button>
+         </form>
+    </div>
+    <div class="col-6 ms-2">
+        <!-- <img src="https://www.bing.com/th/id/OGC.0ca2a5738a404e7800ee1f93dab9676a?pid=1.7&rurl=https%3a%2f%2fcdn.dribbble.com%2fusers%2f129972%2fscreenshots%2f3964116%2f75_smile.gif&ehk=ttYLBLn6tXiQlucWzM6HXO9oxAqbOv%2fOpT6CKygPAgg%3d" width="100%" alt="img"> -->
+        <img src="https://www.seometriks.com/wp-content/uploads/2019/03/about-shape-min-1.png" width="100%" alt="" class="ms-5">
+    </div>
+</div>
